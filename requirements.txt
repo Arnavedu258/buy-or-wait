@@ -1,0 +1,14 @@
+polars
+pandas
+numpy
+pydantic
+fastapi
+uvicorn
+easyocr
+opencv-python
+pillow
+python-dateutil
+rapidfuzz
+pytest
+ruff
+black

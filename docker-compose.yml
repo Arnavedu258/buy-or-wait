@@ -1,0 +1,21 @@
+﻿version: "3.9"
+
+services:
+
+  buy-or-wait:
+
+    build: .
+
+    container_name: buy-or-wait
+
+    restart: unless-stopped
+
+    volumes:
+      - ./dataset:/app/dataset
+      - ./evaluation/reports:/app/evaluation/reports
+
+    environment:
+      APP_ENV: production
+      TZ: Asia/Kolkata
+
+    command: python main.py
